@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <h1>Jose González - Desarrollador Web</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home </a></li>
+          <li><a href="#quien">About</a></li>
+          <li><a href="#actividades">Actividades</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="quien" id="quien">
+        <div>
+          <img src="./assets/20200529_204110.jpg" alt="image not found" />
+        </div>
+        <div class="description">
+          <h3>¿Quien Soy?</h3>
+          <p>
+            🙋‍♂️🙋‍♂️🙋‍♂️Soy Jose Miguel Gonzalez, Tecnico Superior en Informatica, con
+            conocimientos sobre redes, arquitectura del computador y desarrollo
+            web, me gusta mucho todo el mundo tech y la musica, me entusiasma aprender y siempre estoy al tanto de nuevas tecnologias
+            
+          </p>
+        </div>
+      </div>
+      <div class="tech" id="tech">
+        <h3>Mis Tecnologias Favoritas</h3>
+        <div class="tecnologias">
+          <div class="card">
+            <h2>HTML</h2>
+            <img src="./assets/html.png" alt="html" />
+          </div>
+          <div class="card">
+            <h2>Javascript</h2>
+            <img src="./assets/js.png" alt="js" />
+          </div>
+          <div class="card">
+            <h2>CSS</h2>
+            <img src="./assets/CSS3.png" alt="css" />
+          </div>
+          <div class="card">
+            <h2>Mongo</h2>
+            <img src="./assets/mongo.png" alt="mongo" />
+          </div>
+          <div class="card">
+            <h2>Sass</h2>
+            <img src="./assets/sass.png" alt="sass" />
+          </div>
+          <div class="card">
+            <h2>React</h2>
+            <img src="./assets/react.png" alt="react" />
+          </div>
+          <div class="card">
+            <h2>Redux</h2>
+            <img src="./assets/Redux.png" alt="redux" />
+          </div>
+          <div class="card">
+            <h2>Node</h2>
+            <img src="./assets/node.png" alt="card" />
+          </div>
+          <div class="card">
+            <h2>Boostrap</h2>
+            <img src="./assets/boostrap.png" alt="boostrap" />
+          </div>
+        </div>
+      </div>
+      <section id="actividades">
+        <h3>Mis Actividades Favoritas</h3>
+        <form id="actividadForm" action="">
+          <input
+            type="text"
+            id="nombreActividad"
+            placeholder="Nombre de la Actividad"
+          />
+
+          <textarea
+            id="descripcionActividad"
+            placeholder="Descripción de la Actividad"
+            rows="10"
+          ></textarea>
+
+          <input type="url" id="linkImagen" placeholder="Link de Imagen" />
+
+          <button  type="submit">Agregar Actividad</button>
+        </form>
+      </section>
+
+      <section id="tarjetasActividades"></section>
+    </main>
+    <footer>
+      <h3>Coded by Jose Miguel Gonzalez</h3>
+      <span style="color: white; display: flex; align-items: center;">Todos los Derechos Reservados</span>
+    </footer>
+    <script type="module" src="scripts/index.js"></script>
+  </body>
+</html>
